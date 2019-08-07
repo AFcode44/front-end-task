@@ -1,0 +1,9 @@
+<div class="wrap">
+  <div class="search">
+    <input type="text" class="searchTerm" placeholder="Search..." [(ngModel)]="searchValue"
+      (keypress)="onKeyPress($event)">
+    <button type="submit" class="searchButton" (click)="onSearchApply()">
+      <i class="fa fa-search"></i>
+    </button>
+  </div>
+</div>

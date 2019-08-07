@@ -1,0 +1,29 @@
+.go-back {
+  width: calc(100% - 40px);
+  height: 40px;
+  margin: 20px;
+  text-align: center;
+  background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color:#ffffff;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:Arial;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.go-back:hover {
+  background:-webkit-linear-gradient(top, #f6f6f6 5%, #ffffff 100%);
+  background-color:#f6f6f6;
+}
+.go-back:active {
+  position:relative;
+  top:1px;
+}
+
+.user-data {
+  margin: 20px;
+}

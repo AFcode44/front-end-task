@@ -1,0 +1,41 @@
+.error-container {
+  background-color: #001526;
+  position: absolute;
+  height: 140px;
+  width: 300px;
+  font-family: Arial;
+  font-size: 14px;
+  box-sizing: border-box;
+  width: 300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ec5c38;
+  border: 2px solid #ec5c38;
+  border-radius: 20px;
+  color: #FFFFFF;
+}
+
+.error-title {
+  margin: 12px;
+  text-align: center;
+}
+.error-body {
+  display: block;
+  margin: 12px;
+  padding: 4px 0;
+
+}
+.close-btn {
+  color: #FFFFFF;
+  text-align: center;
+  width: 64px;
+  height: 32px;
+  background: rgb(241, 116, 13);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.50);
+  border-radius: 2px 2px;
+  margin: 0px 20px;
+  float: right;
+}
+

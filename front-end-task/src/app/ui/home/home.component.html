@@ -1,0 +1,21 @@
+<app-error-modal *ngIf="fetchingError"></app-error-modal>
+<header class="header" >
+  <button class="log-out" (click)="onLogOut()">LogOut</button><div></div>
+  <app-search-box></app-search-box>
+</header>
+<div class="main-container" [ngClass]="currentClass">
+    <div class="post-container" [hidden]="
+      ((postService.filteredPosts.length !== 0) ? (postService.filteredPosts.length < 1 ) : (postService.alreadySendedPosts.length < 1))">
+      <app-post [wallId]="1"></app-post>
+    </div>
+    <div class="post-container" *ngIf="(currentClass === 'tablet') || (currentClass === 'desktop')"
+    [hidden]="
+      ((postService.filteredPosts.length !== 0) ? (postService.filteredPosts.length < 2 ) : (postService.alreadySendedPosts.length < 2))">
+      <app-post [wallId]="2"></app-post>
+    </div>
+    <div class="post-container" *ngIf="(currentClass === 'desktop')" [hidden]="
+      ((postService.filteredPosts.length !== 0) ? (postService.filteredPosts.length < 3 ) : (postService.alreadySendedPosts.length < 3))">
+      <app-post [wallId]="3"></app-post>
+    </div>
+</div>
+
