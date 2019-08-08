@@ -29,4 +29,9 @@ export class LoginPageComponent implements OnInit {
     }
   }
 
+  public onKeyPress(event): void {
+    if (event.which === 13) {
+      this.onLogin();
+    }
+  }
 }
